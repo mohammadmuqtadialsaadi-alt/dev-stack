@@ -91,9 +91,21 @@ In my project, if the user's stack is empty, I show an empty-state message. If t
 
 **Example:**
 
-```jsx
-{stack.length === 0 ? (
+
+`{stack.length === 0 ? (
   <p>Your stack is empty.</p>
 ) : (
   <StackList />
-)}
+)}`
+---
+
+## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+**Answer:**
+
+A parent component can pass data to a child component using **props**.
+
+For example:
+
+```jsx
+<TechnologyCard tech={tech} />
