@@ -1,6 +1,11 @@
+import technologies from "./data/technologies.json";
+import Navbar from "./components/Navbar";
 function App() {
   return (
-    <h1>Hello Dev Stack</h1>
+    <>
+      <Navbar />
+    </>
+    
   );
 }
 
