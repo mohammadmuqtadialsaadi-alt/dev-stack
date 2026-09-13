@@ -71,10 +71,29 @@ A unique key helps React understand which item was added, removed or changed.
 
 Example:
 
-```jsx
-{technologies.map((tech) => (
+
+`{technologies.map((tech) => (
   <TechnologyCard
     key={tech.id}
     tech={tech}
   />
-))}
+))}`
+
+---
+
+## 6. What is conditional rendering?
+
+**Answer:**
+
+Conditional rendering means showing different UI elements depending on a condition.
+
+In my project, if the user's stack is empty, I show an empty-state message. If technologies have been added, I show the selected technologies.
+
+**Example:**
+
+```jsx
+{stack.length === 0 ? (
+  <p>Your stack is empty.</p>
+) : (
+  <StackList />
+)}
